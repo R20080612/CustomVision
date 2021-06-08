@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf8">
+  <title>分析圖像</title>
+ </head>
+ <body>
+
+    <style>
+
+        h1 {
+               font-size: 40px;
+               text-align: center;
+             }
+       
+       body{
+               background-color: bisque;
+       }
+       
+       #a1   {
+                background-color: rgba(248, 248, 248, 0.849);
+                height: 450px;          
+                line-height: 70px; 
+                top: 50%;
+                position: absolute;
+                transform: translateY(-50%);
+                left: 25%
+       }
+
+       </style>
+
+ <form action='result.php' method='POST'>
+ <div id="a1">
+    <h1>★分析圖像★</h1>
+    <div style="text-align:center">
+    請輸入圖像位址, 並點擊 <strong>"開始分析"</strong> 按鈕進行分析<br>
+圖像必須為<strong style="color: rgb(255, 0, 0);">重機、香蕉、口罩、哈士奇和狼</strong>五種相關的圖片，如果放入以上五種不相關圖像，分析將會不準確</p>
+圖像位址:
+    <input type="text" name="inputImage" id="inputImage"
+        value="" />
+        <input  type='submit' value='開始分析'>
+    </div>
+</div>
+</form>
+ </body>
+</html>
